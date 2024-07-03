@@ -1,0 +1,17 @@
+@import '../../../../../styleRoot/color.scss';
+
+.setup-wallet{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .setup{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 3rem;
+        flex-grow: 1;
+
+    }
+}

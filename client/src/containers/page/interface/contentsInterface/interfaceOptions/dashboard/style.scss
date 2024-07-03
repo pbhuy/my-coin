@@ -1,0 +1,54 @@
+@import '../../../../../../styleRoot/color.scss';
+
+.dashboard{
+    background-color: $--white;
+
+    border-radius: 0.3rem;
+
+    padding: 1rem;
+
+    &__title{
+        text-align: left;
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding: 0.25rem 0rem 1rem 0rem;
+    }
+
+    &__content-item{
+        cursor: pointer;
+        
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-size: 80%;
+        background-color: $--main-1;
+
+        border-radius: 0.3rem;
+        &:last-child{
+            margin-bottom: 0rem;
+        }
+        margin-bottom: 1rem;
+
+        &.content-item--light{
+            background-color: rgba($color: $--recommend, $alpha: 1.0);
+            .content-text{                
+                p{
+                    color: $--dark;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .content-text{
+            
+
+            padding: 1rem 3rem;
+            
+            text-align: left;
+            p{
+                color: $--white;
+                font-size: 2rem;
+                font-weight: bolder;
+            }
+        }
+    }
+}

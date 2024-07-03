@@ -69,7 +69,7 @@ const buyCoin = async (req, res) => {
     amount,
     systemKey.getPrivate('hex')
   );
-  await axios.post('http://localhost:9080/transactions', systemSend);
+  await axios.post('http://localhost:4000/transactions', systemSend);
 
   res.json({ message: 'add transaction success' }).end();
 };

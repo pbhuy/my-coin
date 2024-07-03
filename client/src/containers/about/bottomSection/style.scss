@@ -1,0 +1,33 @@
+@import '../../../styleRoot/color.scss';
+
+.bottom-section{
+
+    padding: 5rem 0rem;
+    min-height: 30vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item{
+        display: flex;
+        align-items: center;
+        width: 45%;
+        .icon{
+            margin-right: 1.5rem;
+        }
+        .content{
+            text-align: left;
+            .title{
+                h2{
+                    margin-bottom: 0rem;
+                }
+            }
+            .description{
+                max-width: 18vw;
+                font-size: 0.8rem;
+                p{
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+}

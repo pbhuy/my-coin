@@ -1,0 +1,193 @@
+@import '../../../../styleRoot/color.scss';
+
+.contents-interface{
+    min-height: 50vh;
+
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .top-content{
+        display: flex;
+        justify-content: space-between;
+        .content-item{
+            &.item--border-none{
+                .content-item__image{
+                    border: none;
+                    img{
+                        height: 100%;
+                    }
+                }
+            }
+
+            &.item--color-main{
+                background-color: rgba($color: $--main-2, $alpha: 0.8);
+            
+            }
+
+            &.item--color-submain{
+                background-color: rgba($color: $--info, $alpha: 0.8);
+            }
+
+            &:last-child{
+                margin-right: 0rem;
+            }
+            background-color: rgba($color: $--blue, $alpha: 0.8);
+    
+            border-radius: 0.3rem;
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            width: calc(100%/3 - 2%);
+
+            padding: 1rem 1.5rem; 
+            margin-right: 1rem;
+    
+            &__image{
+                min-width: 3rem;
+                height: 3rem;
+    
+                border: 5px solid $--white;
+                border-radius: 50%;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                background-size: cover;
+    
+                margin-right: 1.5rem;
+                img{
+                    height: 2.5rem;
+                }
+    
+            }
+    
+            &__main{
+                flex-grow: 1;
+    
+                text-align: left;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .text{
+                    min-height: 5rem;
+                    color: $--white;
+
+                    &.text--large{
+                        .text__desc{
+                            span{
+                                font-size: 1.3rem;
+                                font-weight: 500;
+                                color: $--warning;
+                            }
+                        }
+                    }
+
+                    &__title{
+                        margin: 0rem;
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                    }
+        
+                    &__desc{
+                        margin: 0rem;
+                        margin-top: 0.25rem;
+                        font-size: 0.9rem;
+                        word-break: break-word;
+                        width: 95%;
+                    }
+                }
+    
+                .content-item__subIcon{
+                    
+                    margin-top: 1rem;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    img{
+                        width: 100%;
+                        cursor: pointer;
+                    }
+                }
+        
+            }
+
+            .subTab{
+                &.subTab--fail{
+                    background-color:  rgba($color: $--danger, $alpha: 0.9);
+                    color: $--white;
+                }
+
+                &.subTab--hidden{
+                    opacity: 0;
+                }
+
+                &.subTab--success{
+                    background-color:  rgba($color: $--success, $alpha: 0.9);
+                    color: $--white;
+                }
+
+
+                display: flex;
+                align-items: center;
+                padding: 0.5rem 1rem;
+                background-color: rgba($color: $--gray, $alpha: 0.5);
+
+                color: $--gray;
+                border-radius: 0.5rem;
+                &__text{
+                    font-weight: bold;
+                    flex-grow: 1;
+                    text-align: center;
+                    font-size: 1rem;
+
+                    cursor: default;
+                }
+            }
+
+            .pending-tx{
+                color: white;
+                border: 3px solid white;
+
+                border-radius: 0.3rem;
+
+                width: fit-content;
+
+                padding: 0.5rem;
+
+                position: relative;
+
+                &__count{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: -1.1rem;
+                    right: -1rem;
+
+                    width: 1rem;
+                    height: 1rem;
+
+                    background-color: $--danger;
+                    border-radius: 50%;
+                    padding: 0.5rem;
+
+                    border: 1px solid $--white;
+
+                }
+            }
+        }
+
+    }
+
+    .interface-option{
+        flex-grow: 1;
+        padding-top: 1rem;
+    }
+}

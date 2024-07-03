@@ -1,0 +1,148 @@
+@import '../../../../../../styleRoot/color.scss';
+
+.send-transaction{
+    background-color: $--white;
+
+    border-radius: 0.3rem;
+    padding: 1rem 0rem;
+    
+    &__title{
+        text-align: left;
+        padding-bottom: 1rem;
+
+        border-bottom: 1px solid rgba($color: $--gray, $alpha: .2);
+        p{
+            padding: 0rem 2rem;
+            margin: 0;
+
+            font-weight: bold;
+            font-size: 1.75rem;
+
+            
+            border-left: 5px solid $--main;
+        }
+    }
+
+    &__body{
+
+        display: flex;
+        flex-direction: column;
+
+        .send-transaction-form{
+            padding: 3rem;
+            flex-grow: 1;
+
+            display: flex;
+            flex-direction: column;
+            label{
+                font-size: 1.2rem;
+                font-weight: bold;
+
+                text-align: left;
+
+                margin-left: 0.5rem;
+            }
+            .amount{
+                display: flex;
+
+
+                &__type{
+                    width: 30rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    margin-right: 1rem;
+                    p{
+                        text-align: left;
+                        padding: 1rem;
+                        background-color: $--light;
+                        border-radius: 0.3rem;
+                    }
+                }
+
+                &__main{
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+
+                    input{
+                        font-family: Quicksand, serif;
+
+                        margin: 1rem 0rem;
+                        padding: 1rem;
+                        background-color: $--light;
+                        border: none;
+                        outline: none;
+                        border-radius: 0.3rem;
+                        font-size: 1.1rem;
+
+                        margin-bottom: 0rem;
+                        &::placeholder{
+                            opacity: 0.5;
+                        }
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button {
+                          -webkit-appearance: none;
+                        }
+                    }
+
+                    .warning{
+                        color: $--danger;
+
+                        text-align: left;
+                        margin-left: 0.5rem;
+                        margin-top: 0.2rem;
+
+                        &.warning--hidden{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .address{
+                display: flex;
+                flex-direction: column;
+                input{
+                    font-family: Quicksand, serif;
+                    margin: 1rem 0;
+                        padding: 1rem;
+                        background-color: $--light;
+                        border: none;
+                        outline: none;
+                        border-radius: 0.3rem;
+                        font-size: 1.1rem;
+
+                        &::placeholder{
+                            opacity: 0.5;
+                        }
+                }
+            }
+
+            .tx-fee{
+                display: flex;
+                justify-content: space-between;
+                align-items: center ;
+            }
+        }
+
+        .btn-submit{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+
+            &__clear-btn{
+                font-weight: bold;
+                color: $--main;
+                cursor: pointer;
+                width: fit-content;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+

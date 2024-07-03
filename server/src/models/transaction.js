@@ -1,3 +1,16 @@
+const CryptoJS = require('crypto-js');
+const EC = require('elliptic');
+const ec = new EC.ec('secp256k1');
+
+const systemSender = ['system-coinbase', 'system-sender'];
+const enumSysSender = {
+  COIN_BASE: 'system-coinbase',
+  COIN_SYSTEM: 'system-sender',
+};
+
+const K_SYS = ec.keyFromPrivate('01');
+const K_COINBASE = ec.keyFromPrivate('02');
+
 class Transaction {
   constructor(txIns = [], txOuts = [], hash = '') {
     this.txIns = [];

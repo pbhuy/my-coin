@@ -1,0 +1,194 @@
+@import '../../../../../../styleRoot/color.scss';
+
+.history-transaction{
+    background-color: $--white;
+
+    border-radius: 0.3rem;
+    padding: 1rem 0rem;
+    
+    &__title{
+        text-align: left;
+        padding-bottom: 1rem;
+
+        border-bottom: 1px solid rgba($color: $--gray, $alpha: .2);
+        p{
+            padding: 0rem 2rem;
+            margin: 0;
+
+            font-weight: bold;
+            font-size: 1.75rem;
+
+            
+            border-left: 5px solid $--main;
+        }
+    }
+
+    &__body{
+        min-height: 30vh;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        table{
+            width: 100%;
+            border-radius: 0.3rem;
+
+            
+            tr{
+               height: 3rem;
+               th{
+                    background-color: $--main-2;
+                    color: $--white;
+                    font-size: 1.2rem;
+                    
+                    &:first-child{
+                        width: 60%;
+                    }
+                }
+                td{
+                    background-color: $--light;
+                    text-align: left;
+                    padding: 0.5rem 1rem;
+                    font-weight: 500;
+                    word-break: break-word;
+
+                    &.tx-hash{
+                        &:hover{
+                            color: $--main;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+        .cover{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1rem;
+            margin-right: 0.5rem;
+
+            &.cover--hidden{
+                display: none;
+            }
+
+            .pagination{
+                height: 3rem;
+                display: flex;
+                
+                text-align: center;
+                
+    
+                &__item{
+                    &--active{
+                        background-color: $--main-2;
+                        color: $--white;
+                        
+                        width: 5rem;
+    
+                        box-shadow: 0px 3px 3px rgba($color: $--gray, $alpha: .5);
+                    }
+                    transition: 0.2s;
+    
+                    width: 3rem;
+    
+                    border-radius: 1.5rem;
+                    color: $--gray;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    font-size: 1.2rem;
+                    font-weight: bold;
+
+                    cursor: pointer;
+    
+                }
+            }
+        }
+    }
+
+    .transaction-detail{
+        background-color: $--white;
+
+        border-radius: 0.5rem;
+
+        display: flex;
+        flex-direction: column;
+
+        min-width: 50rem;
+        .header{
+            border-left: 5px solid $--main;
+            border-right: 5px solid $--main;
+
+            margin: 1rem 0rem;
+
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0.25rem 0rem;
+        }
+
+        .body{
+            display: flex;
+            flex-direction: column;
+
+            padding: 1rem;
+        }
+
+        &__item{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            flex: 1 1 0;
+            
+            margin-bottom: 1rem;
+            &-label{
+                min-width: 5rem;
+                font-weight: bold;
+                color: $--white;
+                background-color: $--main;
+
+                border-radius: 0.3rem 0rem 0rem 0.3rem;
+                padding: 0.5rem;
+                border-bottom: 2px solid $--main;
+
+                text-align: right;
+            }
+
+            &-text{
+                margin: 0;
+                flex: 1;
+                border-bottom: 2px solid $--main;
+
+                padding: 0rem 0.5rem;
+                padding-bottom: 0.5rem;
+                text-align: left;
+            }
+        }
+        
+        hr{
+            margin: 0;
+        }
+        
+        .btn{
+            font-weight: bold;
+            font-size: 1.25rem;
+
+            color: $--white;
+            padding: 1rem;
+            border-radius: 3rem;
+
+            background-color: $--main;
+            width: 50%;
+            margin: auto;
+            margin-bottom: 1rem;
+
+            cursor: pointer;
+
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}

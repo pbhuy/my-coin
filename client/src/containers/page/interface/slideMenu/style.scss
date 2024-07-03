@@ -1,0 +1,40 @@
+@import '../../../../styleRoot/color.scss';
+
+.slide-menu{
+    padding: 2rem 0rem;
+    .menu-item{
+
+        display: flex;
+        justify-content: center;
+        
+        padding: 1rem;
+        
+        cursor: pointer;
+        &.item--active{
+            .menu-item__image{
+                opacity: 1;
+            }
+
+            .menu-item__text{
+                font-weight: bold;
+                opacity: 1;
+            }
+        }
+        &__image{
+            opacity: 0.25;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 2rem;
+        }
+
+        &__text{
+            color: $--main-1;
+            
+            text-align: left;
+            
+            opacity: 0.5;
+            
+            flex-grow: 1;
+        }
+    }
+}

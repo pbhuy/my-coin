@@ -1,0 +1,9 @@
+@import '../src/styleRoot/grid.scss';
+@import '../src/styleRoot/color.scss';
+.App {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  &__content{
+    min-height: 50vh;
+  }
+}

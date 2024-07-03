@@ -1,0 +1,20 @@
+@import '../../styleRoot/color.scss';
+
+
+    .fix-clip{
+        background-color: $--main-1;
+        min-height: 120px;
+    }
+
+    .clip-path{
+        
+            background-color: $--white;
+            clip-path: ellipse(55% 115% at 50% -20%);
+            min-height: 120px;
+    }
+
+    .content{
+        .wrap{
+            background-color: $--light;
+        }
+    }

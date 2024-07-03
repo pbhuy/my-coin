@@ -1,0 +1,19 @@
+@import '../../../styleRoot/color.scss';
+
+.interface{
+    min-height: 50vh;
+
+    background-color: $--light;
+    
+    display: flex;
+    justify-content: space-between;
+
+    .slide-menu{
+        width: 17rem;
+        background-color: $--white;
+    }
+
+    .contents-interface{
+        flex-grow: 1;
+    }
+}

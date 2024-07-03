@@ -1,0 +1,39 @@
+@import '../../../styleRoot/color.scss';
+
+.create-wallet{
+    background-color: $--light;
+    min-height: 100vh;
+    padding: 5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .header{
+        &__link{
+            color: $--main;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-grow: 1;
+        background-color: $--white;
+        width: 35rem;
+        margin: 1rem 0rem;
+        border-radius: 0.35rem;
+    }
+
+    .bottom{
+        &__link{
+            color: $--main;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

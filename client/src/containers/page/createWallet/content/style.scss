@@ -1,0 +1,35 @@
+@import '../../../../styleRoot/color.scss';
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__period{
+            &.period--70{
+                &::after{
+                    width: calc(2*100%/3);
+                }   
+            }
+            padding: 1.5rem 0rem;
+            color: $--white;
+            background-color: $--main-1;
+            border-radius: 0.35rem 0.35rem 0rem 0rem;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                width: calc(100%/3);
+                height: 0.35rem;
+                left: 0%;
+                top: 100%;
+                background-color: $--main;
+            }
+    }
+
+    &__main{
+        display: flex;
+        margin-top: 0.5rem;
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,35 @@
+@import '../../../styleRoot/color.scss';
+
+.home{
+
+    &__social{
+        margin: 5rem auto;
+        min-height: 10vh;
+        text-align: center;
+        flex-direction: column;
+        &__title{
+            margin-top: 0rem;
+            width: 100%;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        &__container{
+            display: flex;
+            justify-content: center;
+            .social{
+                margin: 0rem 1rem;
+                img{
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 50%;
+                }
+
+                p{
+                    margin-top: 0rem;
+                }
+            }
+            width: 100%;
+        }
+    }
+}

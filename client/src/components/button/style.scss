@@ -1,0 +1,65 @@
+@import '../../styleRoot/color.scss';
+
+.button{
+    &.btn--blue{
+        background-color: $--main-2;
+    }
+
+    &.btn--main{
+        background-color: $--main;
+    }
+
+    &:hover{
+        transform: translateY(-1rem);
+        box-shadow: 0rem 0rem 1rem rgba($color: $--secondary, $alpha:0.4);
+    }
+
+    &:last-child{
+        margin-right: 0rem;
+    }
+    color: $--white;
+    margin-right: 2rem;
+    padding: 2.5rem;
+    height:200px;
+    border-radius: 0.25rem;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    &__icon{
+        img{
+            width: 5rem;
+            margin-right:2.5rem;
+        }
+    }
+
+    &__content{
+        height: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        .text{
+            display: flex;
+            flex-direction: column;
+
+            .title{
+                h2{
+                    margin-bottom: 0rem;
+                }
+            }
+
+            .description{
+                p{
+                    margin-top: 0.5rem;
+                }
+                ul{
+                    padding-left: 1.5rem;
+                    margin-top: 0rem;
+                    li{
+                        font-size: 0.8rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

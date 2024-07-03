@@ -1,0 +1,40 @@
+@import '../../../../../../styleRoot/color.scss';
+
+.logout-modal{
+    background-color: $--light;
+    border-radius: 0.3rem;
+
+    padding: 2rem 3rem;
+    &__title{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .buttons{
+        display: flex;
+
+        &__item{
+            &:first-child{
+                margin-right: 2rem;
+            }
+            flex: 1 1 0;
+            font-weight: bold;
+
+            padding: 1.25rem;
+
+            background-color: $--main;
+            color: $--white;
+            border: 1px solid $--main;
+
+            border-radius: 0.3rem;
+            cursor: pointer;
+            &.btn--outline{
+                background-color: $--white;
+                color: $--main;
+            }
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import '../../../../../../styleRoot/color.scss';
+
+.title{
+    margin: 0rem;
+}
+
+.modal{
+    .modal-block{
+        height: 100%;
+        width: 33rem;
+        border-radius: 0.3rem;
+        padding: 2rem;
+        background-color: $--white;
+        .status-modal{
+            height: 40vh;
+            &__icon{
+                padding: 2rem;
+                border: 3px solid $--main;
+                border-radius: 50%;
+                color: $--main;
+                margin-bottom: 2rem;
+            }
+        
+            &__title{
+                font-size: 2rem;
+                font-weight: 700;
+                color: $--main-1;
+                margin: 0rem;
+            }
+        
+            &__desc{
+                margin-top: 0.5rem;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+.save-wallet-content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem 0rem;
+    &__block{
+        &:last-child{
+            margin-bottom: 0rem;
+        }
+        border-radius: 0.25rem;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 0.5rem 2rem 0.5rem 1rem;
+        margin-bottom: 1rem;
+        background-color: $--light;
+        
+        .icon-block{
+            margin-right: 0.5rem;
+        }
+
+        .text-block{
+            &__title{
+                font-weight: bold;
+                margin: 0rem;
+            }
+            &__desc{
+                margin: 0.5rem 0rem 0rem 0rem;
+                font-weight: normal;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.basic-button{
+    &.button--disabled{
+        background-color: $--gray;
+        cursor:default;
+    }
+    &.button--icon-hidden{
+        .basic-button__icon{
+            display: none;
+        }
+    }
+
+    margin: auto;
+    cursor: pointer;
+    font-weight: bold;
+    color: $--white;
+    background-color: $--main;
+    padding: 1.2rem;
+    width: 92%;
+    border-radius: 0.25rem;
+    &__icon{
+        float: right;
+        padding-top: 0.2rem;
+    }
+}

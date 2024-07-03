@@ -1,0 +1,187 @@
+@import '../../../../../../styleRoot/color.scss';
+
+.send-transaction-modal{
+    .confirm{
+        background-color: $--white;
+        padding-top: 0.5rem;
+        border-radius: 0.3rem;
+
+        min-width: 50rem;
+        &.confirm--hidden{
+            display: none;
+        }
+
+
+        &__header{
+            font-weight: bold;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+    
+            border-left: 8px solid $--main;
+            border-right: 8px solid $--main;
+        }
+    
+        hr{
+            border-width: 0.5px;
+            border-color: rgba($color: $--gray, $alpha: 0.3);
+        }
+    
+        .content{
+            .transaction{
+                padding: 1rem 2rem;
+                display: flex;
+    
+                
+    
+                justify-content: space-around;
+                align-items: center;
+                &-item{
+                    border-radius: 0.5rem 0.5rem 0rem 0rem;
+                    box-shadow: 0px 3px 5px rgba($color: $--gray, $alpha: 0.5);
+    
+                    max-width: 20rem;
+                    flex: 1 1 0;
+    
+                    &.item--target{
+                        .transaction-item__header{
+                            background-color: rgba($color: $--blue, $alpha: 0.8);
+                        }
+                    }
+                    &__header{
+                        background-color: rgba($color: $--main-2, $alpha: 0.8);
+                        padding: 1rem;
+                        border-radius: 0.5rem 0.5rem 0rem 0rem;
+                        color: $--white;
+                        font-size: 1.25rem;
+                        font-weight: bold;
+                        margin-bottom: 0.2rem;
+                        margin-top: 0rem;
+                    }
+    
+                    &__body{
+                        
+    
+                        margin: 0rem;
+                        background-color: $--white;
+                        
+                        text-align: left;
+                        padding: 1rem;
+    
+                        font-size: 0.8rem;
+                        opacity: 0.7;
+                        
+                        word-break: break-word;
+                    }
+                }
+    
+                &-icon{
+                    margin: 0rem 2rem;
+                    color: $--main-2;
+    
+    
+                    &__icon-1{
+                        animation: opacityLeftToRight;
+                        animation-duration: 1s;
+                        animation-iteration-count: infinite;
+                    }
+                    &__icon-2{
+                        animation: opacityLeftToRight;
+                        animation-delay: 0.2s;
+                        animation-duration: 1s;
+                        animation-iteration-count: infinite;
+                    }
+                    &__icon-3{
+                        animation: opacityLeftToRight;
+                        animation-delay: 0.4s;
+                        animation-duration: 1s;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
+    
+            &__amount{
+                font-size: 1.5rem;
+                text-align: left;
+    
+                padding: 0rem 2rem;
+                font-weight: bold;
+                .txt--warning{
+                    color: $--warning;
+                    float: right;
+                }
+    
+                .txt--main{
+                    color: $--main;
+                    float: right;
+                    margin-left: 0.25rem;
+                }
+            }
+    
+            &__fee{
+                text-align: left;
+    
+                font-size: 0.85rem;
+                padding: 0rem 2rem;
+    
+                .txt-right{
+                    float: right;
+                }
+            }
+        }
+    
+        &__notice{
+            font-size: 0.85rem;
+    
+            color: $--danger;
+            font-weight: bold;
+    
+            text-align: left;
+            padding-left: 0.3rem;
+            margin-bottom: 0.2rem;
+        }
+    
+        &__btn{
+            padding: 0.75rem;
+            
+            background-color: $--main;
+            color: $--white;
+            font-weight: bold;
+    
+            border-radius: 0.3rem;
+    
+            cursor: pointer;
+            
+            font-size: 1.5rem;
+            height: 2rem;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    
+        .bottom{
+            padding: 0rem 2rem;
+            padding-bottom: 2rem;
+    
+            margin-top: 2rem;
+        }
+
+    }
+    .notice{ 
+        &.notice--hidden{
+            display: none;
+        }
+    }
+}
+
+@keyframes opacityLeftToRight{
+    0%   {
+        opacity: 2;
+    }
+    50%  {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}

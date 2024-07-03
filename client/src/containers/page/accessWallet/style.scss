@@ -1,0 +1,31 @@
+@import '../../../styleRoot/color.scss';
+
+.access-wallet{
+    .page-container{
+        .wrap{
+            display: flex;
+            flex-direction: column;
+
+            background-color: $--light;
+        }
+
+        .header{
+            &__link{
+                color: $--main;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    &__content{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .wrap{
+        padding: 5rem 0rem;
+    }
+}
