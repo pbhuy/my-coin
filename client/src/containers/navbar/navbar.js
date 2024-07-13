@@ -88,13 +88,13 @@ export const Navbar = (props) => {
             </div>
           </li>
           <li>
-            <Link to='/#about'>About</Link>
+            <Link to='/#'>About</Link>
           </li>
           <li>
-            <Link to='/#FAQs'>FAQ</Link>
+            <Link to='/#'>FAQ</Link>
           </li>
           <li>
-            <Link to='/#contact'>Contact</Link>
+            <Link to='/#'>Contact</Link>
           </li>
         </ul>
       </div>

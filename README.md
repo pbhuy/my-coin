@@ -17,6 +17,32 @@ Môn học: Các công nghệ mới trong phát triển phần mềm
 
 #### Hướng dẫn cài đặt
 
+1. Clone project
+
+```
+git clone https://github.com/pbhuy/my-coin.git
+```
+
+2. Run server
+
+```
+cd server
+npm install && npm start
+```
+
+3. Run client
+
+```
+cd client
+npm install && npm start
+```
+
+Sau đó mở link http://localhost:3000 trên trình duyệt bất kì để thực hiện kiểm tra phần mềm
+
 #### Tài liệu tham khảo
 
 [How To Build A Simple Cryptocurrency Blockchain In Node.js](https://www.smashingmagazine.com/2020/02/cryptocurrency-blockchain-node-js/?fbclid=IwZXh0bgNhZW0CMTAAAR0G0RElJpZZGc6QEart0SN10BO6np-mCBc8CAk8RFrZkHNDFBn3YZfB48A_aem_-zY_Owhod_l2hM2Jr_cnjw)
+
+#### Demo
+
+- Youtube link:
