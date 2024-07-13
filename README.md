@@ -13,7 +13,7 @@ Môn học: Các công nghệ mới trong phát triển phần mềm
    - Xem thống kê tài khoản
    - Gởi coin cho một địa chỉ khác
    - Xem lịch sử giao dịch (build giống GUI https://etherscan.io/)
-2. Sử dụng thuật toán Proof Of Stake
+2. Sử dụng thuật toán Proof Of Work
 
 #### Hướng dẫn cài đặt
 
